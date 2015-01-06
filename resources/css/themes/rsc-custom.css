@@ -1,0 +1,998 @@
+/**
+ * Page
+ * 
+ * Remove text shadow.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a {
+	text-shadow: none;
+}
+
+
+
+/**
+ * Header
+ * 
+ * Set button colour to purple.
+ * Fix colours.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-header > .ui-btn {
+	color: #a087d2;
+	background-color: inherit;
+	border-color: inherit;
+}
+
+/**
+ * Header Icons
+ * 
+ * Set back, account, and favourite icons.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-header > .ui-icon-carat-l:after {
+	background-image: url('/resources/img/icons-purple/765-arrow-left@3x.png');
+	background-size: 9px 18px;
+}
+.ui-page-theme-a > .ui-header > .ui-icon-account:after {
+	background-image: url('/resources/img/icons-purple/973-user@3x.png');
+	background-size: 18px 15px;
+}
+.ui-page-theme-a > .ui-header > .ui-icon-favorite:after {
+	background-image: url('/resources/img/icons-purple/726-star@3x.png');
+	background-size: 18px 17px;
+}
+
+
+
+/**
+ * Navbar
+ * 
+ * Fix colours.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-btn {
+	background-color: inherit;
+	border-color: #333;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-btn.ui-btn-active {
+	color: #a087d2;
+}
+
+/**
+ * Navbar Icons
+ * 
+ * Set home, films and events, heritage, name a seat, and information icons.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-home:after {
+	background-image: url('/resources/img/icons-white/750-home@3x.png');
+	background-size: 18px 18px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-home.ui-btn-active:after {
+	background-image: url('/resources/img/icons-purple/750-home-selected@3x.png');
+	background-size: 18px 18px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-filmsevents:after {
+	background-image: url('/resources/img/icons-white/788-video-film-strip@3x.png');
+	background-size: 18px 14px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-filmsevents.ui-btn-active:after {
+	background-image: url('/resources/img/icons-purple/788-video-film-strip-selected@3x.png');
+	background-size: 18px 14px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-heritage:after {
+	background-image: url('/resources/img/icons-white/1065-rewind-time-1@3x.png');
+	background-size: 18px 18px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-heritage.ui-btn-active:after {
+	background-image: url('/resources/img/icons-purple/1065-rewind-time-1-selected@3x.png');
+	background-size: 18px 18px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-nameseat:after {
+	background-image: url('/resources/img/icons-white/789-map-location@3x.png');
+	background-size: 18px 15px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-nameseat.ui-btn-active:after {
+	background-image: url('/resources/img/icons-purple/789-map-location-selected@3x.png');
+	background-size: 18px 15px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-info:after {
+	background-image: url('/resources/img/icons-white/724-info@3x.png');
+	background-size: 18px 18px;
+}
+.ui-page-theme-a > .ui-footer > .ui-navbar .ui-icon-info.ui-btn-active:after {
+	background-image: url('/resources/img/icons-purple/724-info-selected@3x.png');
+	background-size: 18px 18px;
+}
+
+
+
+/**
+ * Account
+ * 
+ * iPhone:
+ *  Centers the user's full name and email.
+ *  
+ * iPad:
+ *  Split view vertically.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .account {
+	margin: -16px;
+}
+.ui-page-theme-a > .ui-content > .account > .user-img,
+.ui-page-theme-a > .ui-content > .account > .content {
+	padding: 16px;
+}
+.ui-page-theme-a > .ui-content > .account > .user-img img {
+	width: 100%;
+}
+@media all and (max-width: 767px) {
+	.ui-page-theme-a > .ui-content > .account > .content > p {
+		text-align: center;
+	}
+}
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .account > .user-img,
+	.ui-page-theme-a > .ui-content > .account > .content {
+		width: 50%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.ui-page-theme-a > .ui-content > .account > .user-img > *,
+	.ui-page-theme-a > .ui-content > .account > .content > * {
+		margin-right: 16px;
+		margin-left: 16px;
+	}
+	.ui-page-theme-a > .ui-content > .account > .user-img {
+		float: left;
+	}
+	.ui-page-theme-a > .ui-content > .account > .content {
+		float: right;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+
+
+/**
+ * Films and Events
+ * 
+ * Sets split border between films and events.
+ * Sets natural scrolling for iOS devices.
+ * Sets poster size (200px x 150px).
+ * Sets title ellipsis for long titles.
+ * Fixes colours.
+ * 
+ * iPhone:
+ *  Sets scrolling horizontally.
+ *  Split view horizontally; sets size (full-width).
+ *  Hides actions.
+ * 
+ * iPad:
+ *  Sets scrolling vertically.
+ *  Split view vertically; sets size (half-width x full-height).
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .filmsevents {
+	margin: -16px;
+}
+.ui-page-theme-a > .ui-content > .filmsevents > .films,
+.ui-page-theme-a > .ui-content > .filmsevents > .events {
+	border-color: #333;
+	padding: 16px;
+	-webkit-overflow-scrolling: touch;
+}
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > h1,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > h1,
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > h2,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > h2 {
+	margin-top: 0;
+}
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content {
+	height: 261px;
+}
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > a > .poster,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > a > .poster {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 150px;
+}
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > h1,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > h1,
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > h2,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > h2,
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > h3,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > h3 {
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > h1 > a,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > h1 > a,
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > h2 > a,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > h2 > a,
+.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info > h3 > a,
+.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info > h3 > a {
+	color: inherit;
+	text-decoration: none;
+}
+@media all and (max-width: 767px) {
+	.ui-page-theme-a > .ui-content > .filmsevents > .films,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events {
+		overflow-x: scroll;
+		white-space: nowrap;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films {
+		border-bottom: solid 0.5px;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events > .content {
+		display: inline-block;
+		width: 150px;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .actions,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .actions {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .filmsevents > .films,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events {
+		bottom: 58px;
+		overflow-y: scroll;
+		position: fixed;
+		top: 44px;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films {
+		border-right: solid 0.5px;
+		left: 0;
+		right: 50%;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .events {
+		border-left: solid 0.5px;
+		left: 50%;
+		right: 0;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .info,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .info {
+		float: left;
+		width: 150px;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .actions,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .actions {
+		margin-left: 166px;
+	}
+	.ui-page-theme-a > .ui-content > .filmsevents > .films  > .content > .actions > p,
+	.ui-page-theme-a > .ui-content > .filmsevents > .events > .content > .actions > p {
+		height: 201px;
+		margin-top: 0;
+		margin-bottom: 0;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+
+
+/**
+ * Film or Event
+ * 
+ * Sets transitions when changing orientation between portrait and landscape.
+ * Sets promo size (full-width x half-height) and position (top-half).
+ * Sets content size (full-width x half-height) and position (bottom-half).
+ * Sets natural scrolling for iOS devices.
+ * 
+ * iPhone:
+ *  Hides iPad promo and poster.
+ * 
+ * iPhone (landscape):
+ *  Hides promo.
+ *  Sets content size (full-width x full-height) and position (full-screen).
+ * 
+ * iPad:
+ *  Hides iPhone promo.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .filmevent > .promo,
+.ui-page-theme-a > .ui-content > .filmevent > .content {
+	transition: bottom 1s ease, top 1s ease;
+}
+.ui-page-theme-a > .ui-content > .filmevent > .promo {
+	background-position: center center;
+	background-size: cover;
+	bottom: 50%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 44px;
+}
+.ui-page-theme-a > .ui-content > .filmevent > .content {
+	bottom: 58px;
+	left: 0;
+	overflow-y: scroll;
+	padding: 16px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	-webkit-overflow-scrolling: touch;
+}
+.ui-page-theme-a > .ui-content > .filmevent > .content > .actions > .poster {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 150px;
+}
+.ui-page-theme-a > .ui-content > .filmevent > .content > .info > .trailers {
+	overflow-y: scroll;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+.ui-page-theme-a > .ui-content > .filmevent > .content > .info > .trailers > video.trailer {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 266px;
+}
+.ui-page-theme-a > .ui-content > .filmevent > .content > .info > .trailers > a > .placeholder {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 266px;
+}
+@media all and (max-width: 767px) {
+	.ui-page-theme-a > .ui-content > .filmevent > .promo-ipad,
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .actions > .poster {
+		display: none;
+		visibility: hidden;
+	}
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .info > .trailers {
+		margin-right: -16px;
+		margin-left: -16px;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
+@media all and (max-width: 767px) and (orientation: landscape) {
+	.ui-page-theme-a > .ui-content > .filmevent > .promo-iphone {
+		bottom: 100%;
+	}
+	.ui-page-theme-a > .ui-content > .filmevent > .content {
+		top: 44px;
+	}
+}
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .filmevent > .promo-iphone {
+		display: none;
+		visibility: hidden;
+	}
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .actions {
+		float: left;
+		width: 150px;
+	}
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .info {
+		margin-left: 166px;
+	}
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .info > h1,
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .info > h2 {
+		margin-top: 0;
+	}
+	.ui-page-theme-a > .ui-content > .filmevent > .content > .info > .trailers {
+		margin-right: -16px;
+		padding-right: 16px;
+	}
+}
+
+
+
+/**
+ * Book
+ * 
+ * Sets quanities size (full-width).
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .book > form > table {
+	width: 100%;
+}
+.ui-page-theme-a > .ui-content > .book > form > table > tfoot > tr > td:first-child {
+	text-align: right;
+}
+
+
+
+/**
+ * Ticket
+ * 
+ * Sets promo size (full-width and full-height).
+ * Blurs and lightens promo.
+ * Sets poster size (150px x 200px).
+ * Sets barcode size (full-width x 75px).
+ * 
+ * iPhone:
+ *  Hides iPad promo.
+ *  Hides poster.
+ * 
+ * iPad:
+ *  Hides iPhone promo.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .ticket {
+	bottom: 58px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 44px;
+}
+.ui-page-theme-a > .ui-content > .ticket > .promo {
+	background-position: center center;
+	background-size: cover;
+	bottom: 58px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 44px;
+	z-index: -1;
+	filter: blur(30px);
+	-webkit-filter: blur(30px);
+	transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+}
+.ui-page-theme-a > .ui-content > .ticket > .content {
+	background-color: rgba(255, 255, 255, 0.5);
+	bottom: 58px;
+	left: 0;
+	padding: 16px;
+	position: fixed;
+	right: 0;
+	top: 44px;
+	text-shadow: 0 0 30px #FFF;
+	z-index: 1;
+}
+.ui-page-theme-a > .ui-content > .ticket > .content > h1,
+.ui-page-theme-a > .ui-content > .ticket > .content > h2,
+.ui-page-theme-a > .ui-content > .ticket > .content > p {
+	text-align: center;
+}
+.ui-page-theme-a > .ui-content > .ticket > .content > ul {
+	list-style: none;
+	padding: 0;
+}
+.ui-page-theme-a > .ui-content > .ticket > .content > .poster {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 150px;
+}
+.ui-page-theme-a > .ui-content > .ticket > .content > .barcode {
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 100%;
+}
+@media all and (max-width: 767px) {
+	.ui-page-theme-a > .ui-content > .ticket > .promo-ipad,
+	.ui-page-theme-a > .ui-content > .ticket > .content > .poster {
+		display: none;
+		visibility: hidden;
+	}
+	.ui-page-theme-a > .ui-content > .ticket > .content > .barcode {
+		bottom: 16px;
+		left: 16px;
+		position: absolute;
+		right: 16px;
+		width: auto;
+	}
+}
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .ticket > .promo-iphone {
+		display: none;
+		visibility: hidden;
+	}
+	.ui-page-theme-a > .ui-content > .ticket > .content > h1,
+	.ui-page-theme-a > .ui-content > .ticket > .content > h2 {
+		margin-right: 166px;
+		margin-left: 166px;
+	}
+	.ui-page-theme-a > .ui-content > .ticket > .content > .poster {
+		position: absolute;
+		right: 16px;
+		top: 16px;
+	}
+	.ui-page-theme-a > .ui-content > .ticket > .content > .barcode {
+		bottom: 16px;
+		left: 16px;
+		margin-right: 166px;
+		margin-left: 166px;
+		position: absolute;
+		right: 16px;
+		width: auto;
+	}
+}
+
+
+
+/**
+ * Heritage
+ * 
+ * Sets background image.
+ * Sets buttons position (bottom).
+ * 
+ * iPhone:
+ *  Hides content.
+ * 
+ * iPad:
+ *  Sets background size (half-width x (full-height - buttons)) and position (left-half).
+ *  Sets content size (half-width x (full-height - buttons)) and position (right-half).
+ *  Sets natural scrolling for iOS devices.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .heritage {
+	background-image: url('/resources/img/promo/heritage.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+.ui-page-theme-a > .ui-content > .heritage > .ui-grid-a,
+.ui-page-theme-a > .ui-content > .heritage > .ui-grid-b {
+	bottom: 58px;
+	left: 0;
+	padding: 16px;
+	position: fixed;
+	right: 0;
+}
+@media all and (max-width: 767px) {
+	.ui-page-theme-a > .ui-content > .heritage {
+		bottom: 150px;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 44px;
+	}
+	.ui-page-theme-a > .ui-content > .heritage > .content {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .heritage {
+		bottom: 150px;
+		left: 0;
+		position: fixed;
+		right: 50%;
+		top: 44px;
+	}
+	.ui-page-theme-a > .ui-content > .heritage > .content {
+		bottom: 150px;
+		left: 50%;
+		padding: 16px;
+		position: fixed;
+		overflow-y: scroll;
+		right: 0;
+		top: 44px;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+
+
+/**
+ * Timeline
+ * 
+ * Sets timeline "line".
+ * Sets timeline events.
+ * Fixes colours.
+ * 
+ * iPhone:
+ *  Hides description.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline:before {
+	background-color: #333;
+	bottom: 0px;
+	content: '';
+	left: 16px;
+	position: absolute;
+	top: 0px;
+	width: 1px;
+}
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline {
+	list-style: none;
+	padding-left: 16px;
+}
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li:before {
+	background-color: #333;
+	content: '';
+	height: 1px;
+	left: -16px;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	width: 16px;
+}
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li {
+	background-color: #333;
+	color: #FFF;
+	height: 263px;
+	margin: 16px 0;
+	position: relative;
+}
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > h1,
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > h2 {
+	left: 50%;
+	margin: 16px 16px 16px 8px;
+	position: absolute;
+	overflow: hidden;
+	right: 0;
+	text-align: right;
+	text-overflow: ellipsis;
+	top: 0;
+	white-space: nowrap;
+}
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > .date {
+	left: 0;
+	margin: 16px 8px 16px 16px;
+	position: absolute;
+	right: 50%;
+	top: 0;
+}
+.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > .img {
+	background-position: center center;
+	background-size: cover;
+	height: 200px;
+	position: absolute;
+	top: 63px;
+}
+@media all and (max-width: 767px) {
+	.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > .img {
+		width: 100%;
+	}
+	.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > .description {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > .img {
+		float: left;
+		width: 50%;
+	}
+	.ui-page-theme-a > .ui-content > .timeline > ul.timeline > li > .description {
+		left: 50%;
+		margin: 8px 16px 16px 16px;
+		position: absolute;
+		right: 0;
+		top: 63px;
+	}
+}
+
+
+
+/**
+ * Artefacts
+ * 
+ * Sets artefacts.
+ * Sets natural scrolling for iOS devices.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .artefacts > ul {
+	list-style: none;
+	padding: 0;
+}
+.ui-page-theme-a > .ui-content > .artefacts > ul > li > h1,
+.ui-page-theme-a > .ui-content > .artefacts > ul > li > h2 {
+	text-align: center;
+}
+.ui-page-theme-a > .ui-content > .artefacts > ul > li > .img {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 250px;
+}
+.ui-page-theme-a > .ui-content > .artefacts > ul > li > .description {
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+
+/** 
+ * Name a Seat
+ * 
+ * iPad:
+ *  Sets background image.
+ *  Sets content size (full-width x half-height) and position (bottom-half).
+ * 
+ * Theme: A
+ */
+@media all and (min-width: 768px) {
+	.ui-page-theme-a > .ui-content > .nameseat {
+		background-image: url('/resources/img/promo/nameseat.jpg');
+		background-position: center center;
+		background-size: cover;
+		bottom: 50%;
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 44px;
+	}
+	.ui-page-theme-a > .ui-content > .nameseat > .content {
+		bottom: 58px;
+		left: 0;
+		padding: 16px;
+		position: fixed;
+		overflow-y: scroll;
+		right: 0;
+		top: 50%;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+
+
+
+/**
+ * Seat Map
+ * 
+ * Fixes seat map.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .seatmap > .screen {
+	background-image: url('/resources/img/promo/info.jpg');
+	background-position: center center;
+	background-size: cover;
+	bottom: 100%;
+	left: 16px;
+	position: fixed;
+	right: 16px;
+	top: 60px;
+	transition: bottom 2s ease, left 2s ease, right 2s ease, top 2s ease;
+	z-index: 2;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table,
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table thead,
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table tbody,
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table tr,
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table td {
+	display: block;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > thead {
+	border-top: solid 1px #333;
+	margin: 2px;
+	padding: 5px;
+	text-align: center;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > tbody {
+	margin-right: -16px;
+	margin-left: -16px;
+	padding-right: 16px;
+	padding-left: 16px;
+	overflow: scroll;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > tbody > tr {
+	text-align: center;
+	white-space: nowrap;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > tbody > tr > td {
+	display: inline-block;
+	margin: 2px;
+	max-height: 20px;
+	max-width: 20px;
+	min-height: 10px;
+	min-width: 10px;
+	padding: 5px;
+	transition: height 1s ease, width 1s ease;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > tbody > tr > td.seat {
+	border: solid 1px #a087d2;
+	border-radius: 5px;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > tbody > tr > td.seat.selected {
+	background-color: #a087d2;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > table > tbody > tr > td.seat.disabled {
+	background-color: #ccc;
+	border-color: #666;
+}
+
+
+
+/**
+ * Seat Map Icons
+ * 
+ * Set zoom in and out icons.
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > .ui-icon-zoomin:after {
+	background-image: url('/resources/img/icons-white/736-zoom-in@3x.png');
+	background-size: 18px 18px;
+}
+.ui-page-theme-a > .ui-content > .seatmap > .seatmap > .ui-icon-zoomout:after {
+	background-image: url('/resources/img/icons-white/737-zoom-out@3x.png');
+	background-size: 18px 18px;
+}
+
+
+
+/**
+ * Info
+ * 
+ * Sets video size (full-width x half-height) and position (top-half).
+ * Sets content size (full-width x half-height) and position (bottom-half).
+ * Sets natural scrolling for iOS devices.
+ */
+.ui-page-theme-a > .ui-content > .info > .video {
+	bottom: 50%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 44px;
+}
+.ui-page-theme-a > .ui-content > .info > .video > iframe {
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+.ui-page-theme-a > .ui-content > .info > .content {
+	bottom: 58px;
+	left: 0;
+	padding: 16px;
+	position: fixed;
+	overflow-y: scroll;
+	right: 0;
+	top: 50%;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+
+/**
+ * Map
+ * 
+ * Sets map size (full-width x full-height).
+ * 
+ * Theme: A
+ */
+.ui-page-theme-a > .ui-content > .map {
+	bottom: 58px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 44px;
+}
+.ui-page-theme-a > .ui-content > .map > iframe {
+	border: none;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+/**
+ * Home
+ * 
+ * Sets background image.
+ * Sets content background colour and position (bottom).
+ * 
+ * Theme: A
+ */
+#home.ui-page-theme-a {
+	background-attachment: fixed;
+	background-image: url('/resources/img/promo/home.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+#home.ui-page-theme-a > .ui-content {
+	background-color: rgba(0, 0, 0, 0.8);
+	bottom: 58px;
+	color: #FFF;
+	left: 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+}
+
+
+
+/**
+ * Sign Up / In / Out
+ * 
+ * 
+ * 
+ * Sign Up
+ * 
+ * iPhone:
+ *  Hides sign in.
+ * 
+ * iPad:
+ *  Sets sign in and sign up size (half-width).
+ *  Sets split border between sign in and sign up.
+ *  Sets sign in position (left-half).
+ *  Sets sign up position (right-half).  
+ *  Hides extra sign up button.
+ * 
+ * 
+ * 
+ * Sign In
+ * 
+ * iPhone:
+ *  Hides sign up.
+ * 
+ * iPad:
+ *  Sets sign in and sign up size (half-width).
+ *  Sets split border between sign in and sign up.
+ *  Sets sign in position (left-half).
+ *  Sets sign up position (right-half).
+ *  Hides extra sign up button.  
+ * 
+ * 
+ * 
+ * Theme: A
+ */
+@media all and (max-width: 767px) {
+	#auth-signup.ui-page-theme-a > .ui-content > .signin,
+	#auth-signin.ui-page-theme-a > .ui-content > .signup {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media all and (min-width: 768px) {
+	#auth-signup.ui-page-theme-a > .ui-content > .signup,
+	#auth-signup.ui-page-theme-a > .ui-content > .signin,
+	#auth-signin.ui-page-theme-a > .ui-content > .signup,
+	#auth-signin.ui-page-theme-a > .ui-content > .signin {
+		bottom: 58px;
+		position: fixed;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		top: 44px;
+		width: 50%;
+		-webkit-overflow-scrolling: touch;
+	}
+	#auth-signup.ui-page-theme-a > .ui-content > .signin,
+	#auth-signin.ui-page-theme-a > .ui-content > .signin {
+		border-right: 0.5px solid #333;
+		left: 0;
+	}
+	#auth-signup.ui-page-theme-a > .ui-content > .signup,
+	#auth-signin.ui-page-theme-a > .ui-content > .signup {
+		border-left: 0.5px solid #333;
+		right: 0;
+	}
+	#auth-signup.ui-page-theme-a > .ui-content form,
+	#auth-signin.ui-page-theme-a > .ui-content form {
+		padding: 16px;
+	}
+	#auth-signin.ui-page-theme-a > .ui-content > .signin > form > .signup {
+		display: none;
+		visibility: hidden;
+	}
+}

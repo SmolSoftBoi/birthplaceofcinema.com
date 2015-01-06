@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond $1 !^(index\.php|images|favicon\.ico|robots\.txt|resources|docs|media)
+	RewriteRule ^(.*)$ /index.php/$1 [L]
+</IfModule>
+
+<IfModule mod_mime.c>
+	AddType application/x-apple-aspen-config .mobileconfig
+</IfModule>
