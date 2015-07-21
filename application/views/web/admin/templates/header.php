@@ -29,7 +29,7 @@
 		    			<span class="icon-bar"></span>
 		    			<span class="icon-bar"></span>
 		    		</button>
-		    		<a class="navbar-brand" href="<?php echo base_url(); ?>">Regent Street Cinema</a>
+		    		<a class="navbar-brand" href="<?php echo site_url(); ?>">Regent Street Cinema</a>
 		    	</div>
 
 		    	<div class="collapse navbar-collapse" id="epickris-navbar-collapse">
@@ -45,12 +45,12 @@
 				<div class="sidebar sidebar-nav-fixed-top">
 
 					<ul class="nav nav-sidebar">
-						<li<?php if (isset($nav)) if ($nav === 'dashboard') echo ' class="active"'; ?>><a href="<?php echo base_url('admin'); ?>"><span class="icon icon-dashboard"></span> Dashboard</a></li>
+						<li<?php if (isset($nav)) if ($nav === 'dashboard') echo ' class="active"'; ?>><a href="<?php echo site_url('admin'); ?>"><span class="icon icon-dashboard"></span> Dashboard</a></li>
 					</ul>
 					<ul class="nav nav-sidebar">
-						<li <?php if (isset($nav)) if ($nav === 'filmsevents') echo ' class="active"'; ?>><a href="<?php echo base_url('admin/filmsevents'); ?>"><span class="icon icon-film"></span> Films & Events</a></li>
-						<li <?php if (isset($nav)) if ($nav === 'newsletter') echo ' class="active"'; ?>><a href="<?php echo base_url('admin/newsletter'); ?>"><span class="icon icon-mail"></span> Newsletter</a></li>
-						<li <?php if (isset($nav)) if ($nav === 'favorites') echo ' class="active"'; ?>><a href="<?php echo base_url('admin/favorites'); ?>"><span class="icon icon-mail"></span> Favourites</a></li>
+						<li <?php if (isset($nav)) if ($nav === 'filmsevents') echo ' class="active"'; ?>><a href="<?php echo site_url('admin/filmsevents'); ?>"><span class="icon icon-film"></span> Films & Events</a></li>
+						<li <?php if (isset($nav)) if ($nav === 'newsletter') echo ' class="active"'; ?>><a href="<?php echo site_url('admin/newsletter'); ?>"><span class="icon icon-mail"></span> Newsletter</a></li>
+						<li <?php if (isset($nav)) if ($nav === 'favorites') echo ' class="active"'; ?>><a href="<?php echo site_url('admin/favorites'); ?>"><span class="icon icon-mail"></span> Favourites</a></li>
 					</ul>
 
 				</div>

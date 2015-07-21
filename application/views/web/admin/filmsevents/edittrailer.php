@@ -60,7 +60,7 @@
 			<?php } ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-block btn-primary">Save</button>
-				<a class="btn btn-block btn-danger" href="<?php echo base_url('admin/filmsevents/deletetrailer/' . $filmevent_item['filmevent_id'] . '/' . $film_trailer_item['film_trailer_id']); ?>">Delete</a>
+				<a class="btn btn-block btn-danger" href="<?php echo site_url('admin/filmsevents/deletetrailer/' . $filmevent_item['filmevent_id'] . '/' . $film_trailer_item['film_trailer_id']); ?>">Delete</a>
 			</div>
 			<div class="form-group">
 				<p><?php

@@ -17,7 +17,7 @@
 		<label for="pass" class="ui-hidden-accessible">Password</label>
 		<input type="password" id="pass" name="pass" placeholder="Password" required>
 		<button type="submit">Sign In</button>
-		<a href="<?php echo base_url('auth/signup'); ?>" class="signup ui-btn" data-transition="slide">Sign Up</a>
+		<a href="<?php echo site_url('auth/signup'); ?>" class="signup ui-btn" data-transition="slide">Sign Up</a>
 	<?php echo form_close(); ?>
 
 </div>

@@ -51,7 +51,7 @@
 					 */
 					if (isset($account)) if ($account === TRUE) {
 				?>
-					<a href="<?php if (isset($session)) { echo base_url('account'); } else { echo base_url('auth'); } ?>" class="ui-icon-account ui-btn ui-btn-icon-right ui-btn-right ui-nodisc-icon" data-icon="custom" data-transition="slide">Account</a>
+					<a href="<?php if (isset($session)) { echo site_url('account'); } else { echo site_url('auth'); } ?>" class="ui-icon-account ui-btn ui-btn-icon-right ui-btn-right ui-nodisc-icon" data-icon="custom" data-transition="slide">Account</a>
 				<?php } ?>
 
 				<?php
@@ -62,7 +62,7 @@
 					 */
 					if (isset($signout)) if ($signout === TRUE) {
 				?>
-					<a href="<?php echo base_url('auth/signout'); ?>" class="ui-icon-account ui-btn ui-btn-icon-right ui-btn-right ui-nodisc-icon" data-icon="custom" data-transition="slide">Sign Out</a>
+					<a href="<?php echo site_url('auth/signout'); ?>" class="ui-icon-account ui-btn ui-btn-icon-right ui-btn-right ui-nodisc-icon" data-icon="custom" data-transition="slide">Sign Out</a>
 				<?php } ?>
 
 				<?php
@@ -73,7 +73,7 @@
 					 */
 					if (isset($favorites)) if ($favorites === TRUE) {
 				?>
-					<a href="<?php echo base_url('filmsevents/favorites'); ?>" class="ui-icon-favorite ui-btn ui-btn-icon-left ui-btn-left ui-nodisc-icon" data-icon="custom" data-transition="slide">Favourites</a>
+					<a href="<?php echo site_url('filmsevents/favorites'); ?>" class="ui-icon-favorite ui-btn ui-btn-icon-left ui-btn-left ui-nodisc-icon" data-icon="custom" data-transition="slide">Favourites</a>
 				<?php } ?>
 
 			</div>

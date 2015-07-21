@@ -1,5 +1,5 @@
 <div class="page-header">
-	<h1>Edit <?php echo $filmevent_item['title'] ?> <a class="btn btn-xs btn-default" href="<?php echo base_url('admin/filmsevents/add'); ?>">Add Film or Event</a> <a class="btn btn-xs btn-default" href="<?php echo base_url('admin/filmsevents/addtime/' . $filmevent_item['filmevent_id']); ?>">Add <?php if ($filmevent_item['type_slug'] == 'film') { echo 'Film'; } else if ($filmevent_item['type_slug'] == 'event') { echo 'Event'; } ?> Time</a><?php if ($filmevent_item['type_slug'] == 'film') { ?> <a class="btn btn-xs btn-default" href="<?php echo base_url('admin/filmsevents/addtrailer/' . $filmevent_item['filmevent_id']); ?>">Add <?php if ($filmevent_item['type_slug'] == 'film') { echo 'Film'; } else if ($filmevent_item['type_slug'] == 'event') { echo 'Event'; } ?> Trailer</a><?php } ?></h1>
+	<h1>Edit <?php echo $filmevent_item['title'] ?> <a class="btn btn-xs btn-default" href="<?php echo site_url('admin/filmsevents/add'); ?>">Add Film or Event</a> <a class="btn btn-xs btn-default" href="<?php echo site_url('admin/filmsevents/addtime/' . $filmevent_item['filmevent_id']); ?>">Add <?php if ($filmevent_item['type_slug'] == 'film') { echo 'Film'; } else if ($filmevent_item['type_slug'] == 'event') { echo 'Event'; } ?> Time</a><?php if ($filmevent_item['type_slug'] == 'film') { ?> <a class="btn btn-xs btn-default" href="<?php echo site_url('admin/filmsevents/addtrailer/' . $filmevent_item['filmevent_id']); ?>">Add <?php if ($filmevent_item['type_slug'] == 'film') { echo 'Film'; } else if ($filmevent_item['type_slug'] == 'event') { echo 'Event'; } ?> Trailer</a><?php } ?></h1>
 </div>
 <?php
     $attributes = array(
@@ -72,11 +72,11 @@
 			<?php } ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-block btn-primary">Save</button>
-				<a class="btn btn-block btn-default" href="<?php echo base_url('admin/filmsevents/times/' . $filmevent_item['filmevent_id']); ?>">Times</a>
+				<a class="btn btn-block btn-default" href="<?php echo site_url('admin/filmsevents/times/' . $filmevent_item['filmevent_id']); ?>">Times</a>
 				<?php if ($filmevent_item['type_slug'] == 'film') { ?>
-					<a class="btn btn-block btn-default" href="<?php echo base_url('admin/filmsevents/trailers/' . $filmevent_item['filmevent_id']); ?>">Trailers</a>
+					<a class="btn btn-block btn-default" href="<?php echo site_url('admin/filmsevents/trailers/' . $filmevent_item['filmevent_id']); ?>">Trailers</a>
 				<?php } ?>
-				<a class="btn btn-block btn-danger" href="<?php echo base_url('admin/filmsevents/delete/' . $filmevent_item['filmevent_id']); ?>">Delete</a>
+				<a class="btn btn-block btn-danger" href="<?php echo site_url('admin/filmsevents/delete/' . $filmevent_item['filmevent_id']); ?>">Delete</a>
 			</div>
 			<div class="form-group">
 				<p><?php

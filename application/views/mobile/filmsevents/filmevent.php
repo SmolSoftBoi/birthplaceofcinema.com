@@ -14,7 +14,7 @@
 
 			<div class="poster" <?php if ($filmevent_item['poster_media_loc'] !== '') { ?>style="background-image: url(<?php echo base_url('media/' . $filmevent_item['poster_media_loc']); ?>);"<?php } ?>></div>
 			<a href="#" class="ui-btn favorite" data-action="add" data-filmevent-id="<?php echo $filmevent_item['filmevent_id']; ?>">Add to Favourites</a>
-			<a href="<?php echo base_url('filmsevents/' . $filmevent_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
+			<a href="<?php echo site_url('filmsevents/' . $filmevent_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
 
 		</div>
 		<!-- / Actions -->

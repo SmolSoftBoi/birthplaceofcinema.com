@@ -150,7 +150,7 @@ class Auth_model extends CI_Model {
 
 		$message_alt = 'Hello ' . $data['user']['first_name'] . '!' . "\r\n"
 		             . 'To verifiy your email address, visit:' . "\r\n"
-		             . '{unwrap}' . base_url('auth/verify/' . $uuid) . "\r\n"
+		             . '{unwrap}' . site_url('auth/verify/' . $uuid) . "\r\n"
 		             . 'Regards,' . "\r\n"
 		             . 'Regent Street Cinema';
 

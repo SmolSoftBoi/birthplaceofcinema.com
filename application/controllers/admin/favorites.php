@@ -123,14 +123,14 @@ class Favorites extends CI_Controller {
 					$message_alt .= $film_item['title'] . "\r\n"
 					              . $film_item['description'] . "\r\n"
 					              . 'Book Tickets:' . "\r\n"
-					              . '{unwrap}' . base_url('filmsevents/' . $film_item['slug'] . '/book') . "\r\n";
+					              . '{unwrap}' . site_url('filmsevents/' . $film_item['slug'] . '/book') . "\r\n";
 				}
 				$message_alt .= 'Events' . "\r\n";
 				if (isset($email['events'])) foreach ($email['events'] as $event_item) {
 					$message_alt .= $event_item['title'] . "\r\n"
 					              . $event_item['description'] . "\r\n"
 					              . 'Book Tickets:' . "\r\n"
-					              . '{unwrap}' . base_url('filmsevents/' . $event_item['slug'] . '/book') . "\r\n";
+					              . '{unwrap}' . site_url('filmsevents/' . $event_item['slug'] . '/book') . "\r\n";
 				}
 
 				$emails = $this->data_model->search_emails(array(

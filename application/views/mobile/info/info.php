@@ -17,11 +17,11 @@
 		<div class="ui-grid-a">
 			<div class="ui-block-a">
 				<!-- Map button -->
-				<a href="<?php echo base_url('info/map'); ?>" class="ui-btn" data-transition="slide">Map</a>
+				<a href="<?php echo site_url('info/map'); ?>" class="ui-btn" data-transition="slide">Map</a>
 			</div>
 			<div class="ui-block-b">
 				<!-- Contact Us button -->
-				<a href="<?php echo base_url('info/contact'); ?>" class="ui-btn" data-transition="slide">Contact Us</a>
+				<a href="<?php echo site_url('info/contact'); ?>" class="ui-btn" data-transition="slide">Contact Us</a>
 			</div>
 		</div>
 

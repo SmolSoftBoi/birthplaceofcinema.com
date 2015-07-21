@@ -25,9 +25,9 @@
 						 */
 					?>
 					<!-- Poster -->
-					<a href="<?php if ( ! isset($film_item['booked_filmevent_id'])) { echo base_url('filmsevents/' . $film_item['slug']); } else { echo base_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); } ?>"><div class="poster" <?php if ($film_item['poster_media_loc'] !== '') { ?>style="background-image: url(<?php echo base_url('media/' . $film_item['poster_media_loc']); ?>);"<?php } ?>></div></a>
+					<a href="<?php if ( ! isset($film_item['booked_filmevent_id'])) { echo site_url('filmsevents/' . $film_item['slug']); } else { echo site_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); } ?>"><div class="poster" <?php if ($film_item['poster_media_loc'] !== '') { ?>style="background-image: url(<?php echo base_url('media/' . $film_item['poster_media_loc']); ?>);"<?php } ?>></div></a>
 					<!-- / Poster -->
-					<h3><a href="<?php if ( ! isset($film_item['booked_filmevent_id'])) { echo base_url('filmsevents/' . $film_item['slug']); } else { echo base_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); } ?>"><?php echo $film_item['title']; ?></a></h3>
+					<h3><a href="<?php if ( ! isset($film_item['booked_filmevent_id'])) { echo site_url('filmsevents/' . $film_item['slug']); } else { echo site_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); } ?>"><?php echo $film_item['title']; ?></a></h3>
 
 				</div>
 				<!-- / Info -->
@@ -60,16 +60,16 @@
 								</div>
 								<div class="ui-block-b">
 									<!-- Book Tickets button -->
-									<a href="<?php echo base_url('filmsevents/' . $film_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
+									<a href="<?php echo site_url('filmsevents/' . $film_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
 								</div>
 							</div>
 						<?php } else { ?>
 							<!-- View Ticket button -->
-							<a href="<?php echo base_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); ?>" class="ui-btn" data-transition="slide">View Ticket</a>
+							<a href="<?php echo site_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); ?>" class="ui-btn" data-transition="slide">View Ticket</a>
 						<?php } ?>
 					<?php } else { ?>
 						<!-- Book Tickets button -->
-						<a href="<?php echo base_url('filmsevents/' . $film_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
+						<a href="<?php echo site_url('filmsevents/' . $film_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
 					<?php } ?>
 
 				</div>
@@ -107,9 +107,9 @@
 						 */
 					?>
 					<!-- Poster -->
-					<a href="<?php if ( ! isset($event_item['booked_filmevent_id'])) { echo base_url('filmsevents/' . $event_item['slug']); } else { echo base_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); } ?>"><div class="poster" <?php if ($event_item['poster_media_loc'] !== '') { ?>style="background-image: url(<?php echo base_url('media/' . $event_item['poster_media_loc']); ?>);"<?php } ?>></div></a>
+					<a href="<?php if ( ! isset($event_item['booked_filmevent_id'])) { echo site_url('filmsevents/' . $event_item['slug']); } else { echo site_url('filmsevents/ticket/' . $film_item['booked_filmevent_id']); } ?>"><div class="poster" <?php if ($event_item['poster_media_loc'] !== '') { ?>style="background-image: url(<?php echo base_url('media/' . $event_item['poster_media_loc']); ?>);"<?php } ?>></div></a>
 					<!-- / Poster -->
-					<h3><a href="<?php echo base_url('filmsevents/' . $event_item['slug']); ?>"><?php echo $event_item['title']; ?></a></h3>
+					<h3><a href="<?php echo site_url('filmsevents/' . $event_item['slug']); ?>"><?php echo $event_item['title']; ?></a></h3>
 
 				</div>
 				<!-- / Info -->
@@ -142,16 +142,16 @@
 								</div>
 								<div class="ui-block-b">
 									<!-- Book Tickets button -->
-									<a href="<?php echo base_url('filmsevents/' . $event_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
+									<a href="<?php echo site_url('filmsevents/' . $event_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
 								</div>
 							</div>
 						<?php } else { ?>
 							<!-- View Ticket button -->
-							<a href="<?php echo base_url('filmsevents/ticket/' . $event_item['booked_filmevent_id']); ?>" class="ui-btn" data-transition="slide">View Ticket</a>
+							<a href="<?php echo site_url('filmsevents/ticket/' . $event_item['booked_filmevent_id']); ?>" class="ui-btn" data-transition="slide">View Ticket</a>
 						<?php } ?>
 					<?php } else { ?>
 						<!-- Book Tickets button -->
-						<a href="<?php echo base_url('filmsevents/' . $event_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
+						<a href="<?php echo site_url('filmsevents/' . $event_item['slug'] . '/book'); ?>" class="ui-btn" data-transition="slide">Book Tickets</a>
 					<?php } ?>
 
 				</div>

@@ -26,7 +26,7 @@
 			<li>One year membership of the Regent Street Cinema.</li>
 		</ul>
 		<!-- Seat Map button -->
-		<a href="<?php echo base_url('nameseat/seatmap'); ?>" class="ui-btn" data-transition="slide">Seat Map</a>
+		<a href="<?php echo site_url('nameseat/seatmap'); ?>" class="ui-btn" data-transition="slide">Seat Map</a>
 
 	</div>
 	<!-- / Content -->

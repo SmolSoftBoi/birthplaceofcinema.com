@@ -12,11 +12,11 @@
 							 * If section is active, set active state.
 							 */
 						?>
-						<li><a href="<?php echo base_url(); ?>" class="ui-icon-home ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'home') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Home</a></li>
-						<li><a href="<?php echo base_url('filmsevents'); ?>" class="ui-icon-filmsevents ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'filmsevents') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Films & Events</a></li>
-						<li><a href="<?php echo base_url('heritage'); ?>" class="ui-icon-heritage ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'heritage') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Heritage</a></li>
-						<li><a href="<?php echo base_url('nameseat'); ?>" class="ui-icon-nameseat ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'nameseat') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Name a Seat</a></li>
-						<li><a href="<?php echo base_url('info'); ?>" class="ui-icon-info ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'info') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Information</a></li>
+						<li><a href="<?php echo site_url(); ?>" class="ui-icon-home ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'home') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Home</a></li>
+						<li><a href="<?php echo site_url('filmsevents'); ?>" class="ui-icon-filmsevents ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'filmsevents') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Films & Events</a></li>
+						<li><a href="<?php echo site_url('heritage'); ?>" class="ui-icon-heritage ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'heritage') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Heritage</a></li>
+						<li><a href="<?php echo site_url('nameseat'); ?>" class="ui-icon-nameseat ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'nameseat') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Name a Seat</a></li>
+						<li><a href="<?php echo site_url('info'); ?>" class="ui-icon-info ui-nodisc-icon <?php if (isset($nav)) if ($nav === 'info') echo ' ui-btn-active'; ?>" data-icon="custom" data-transition="none">Information</a></li>
 					</ul>
 				</div>
 				<!-- / Navbar -->

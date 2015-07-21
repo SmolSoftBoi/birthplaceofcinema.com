@@ -5,9 +5,9 @@
 	<div class="user-img">
 		<?php if ($session['user_media_loc'] !== '') { ?>
 			<div><img src="<?php echo base_url('media/users/' . $session['user_media_loc']); ?>" alt="<?php echo $session['first_name'] . ' ' . $session['last_name']; ?>"></div>
-			<a href="<?php echo base_url('account/userimg'); ?>" class="ui-btn">Edit Profile Image</a>
+			<a href="<?php echo site_url('account/userimg'); ?>" class="ui-btn">Edit Profile Image</a>
 		<?php } else { ?>
-			<a href="<?php echo base_url('account/userimg'); ?>" class="ui-btn">Add Profile Image</a>
+			<a href="<?php echo site_url('account/userimg'); ?>" class="ui-btn">Add Profile Image</a>
 		<?php } ?>
 	</div>
 	<!-- / User Image -->
@@ -20,7 +20,7 @@
 		<p><?php echo $session['user']; ?></p>
 
 		<!-- Booked Films and Events button -->
-		<a href="<?php echo base_url('account/bookedfilmsevents'); ?>" class="ui-btn" data-transition="slide">Booked Films & Events</a>
+		<a href="<?php echo site_url('account/bookedfilmsevents'); ?>" class="ui-btn" data-transition="slide">Booked Films & Events</a>
 
 		<!-- Newsletter Subscription -->
 		<div class="ui-field-contain">

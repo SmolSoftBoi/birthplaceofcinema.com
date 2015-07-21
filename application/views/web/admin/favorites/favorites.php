@@ -7,7 +7,7 @@
 	</div>
 <?php } ?>
 <?php if (isset($users)) if ($users) { ?>
-	<a href="<?php echo base_url('admin/favorites/send'); ?>" class="btn btn-block btn-primary">Send</a>
+	<a href="<?php echo site_url('admin/favorites/send'); ?>" class="btn btn-block btn-primary">Send</a>
 <?php } else { ?>
 	<div class="alert alert-warning">
 		<p class="lead">No users to send to.</p>

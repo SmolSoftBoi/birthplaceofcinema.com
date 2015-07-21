@@ -23,15 +23,15 @@
 	<div class="ui-grid-b">
 		<div class="ui-block-a">
 			<!-- Timeline button -->
-			<a href="<?php echo base_url('heritage/timeline'); ?>" class="ui-btn" data-transition="slide">Timeline</a>
+			<a href="<?php echo site_url('heritage/timeline'); ?>" class="ui-btn" data-transition="slide">Timeline</a>
 		</div>
 		<div class="ui-block-b">
 			<!-- Artefacts button -->
-			<a href="<?php echo base_url('heritage/artefacts'); ?>" class="ui-btn" data-transition="slide">Artefacts</a>
+			<a href="<?php echo site_url('heritage/artefacts'); ?>" class="ui-btn" data-transition="slide">Artefacts</a>
 		</div>
 		<div class="ui-block-b">
 			<!-- Game button -->
-			<a href="<?php echo base_url('heritage/game'); ?>" class="ui-btn" data-transition="slide">Game</a>
+			<a href="<?php echo site_url('heritage/game'); ?>" class="ui-btn" data-transition="slide">Game</a>
 		</div>
 	</div>
 

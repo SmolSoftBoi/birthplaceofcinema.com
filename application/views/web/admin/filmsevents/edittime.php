@@ -35,7 +35,7 @@
 
 			<div class="form-group">
 				<button type="submit" class="btn btn-block btn-primary">Save</button>
-				<a class="btn btn-block btn-danger" href="<?php echo base_url('admin/filmsevents/deletetime/' . $filmevent_item['filmevent_id'] . '/' . $filmevent_time_item['filmevent_time_id']); ?>">Delete</a>
+				<a class="btn btn-block btn-danger" href="<?php echo site_url('admin/filmsevents/deletetime/' . $filmevent_item['filmevent_id'] . '/' . $filmevent_time_item['filmevent_time_id']); ?>">Delete</a>
 			</div>
 			<div class="form-group">
 				<p><?php
