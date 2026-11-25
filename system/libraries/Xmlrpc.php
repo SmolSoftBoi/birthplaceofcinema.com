@@ -652,6 +652,9 @@ class XML_RPC_Message extends CI_Xmlrpc
 	//-------------------------------------
 	//  Parse External XML-RPC Server's Response
 	//-------------------------------------
+	// Note: Debug output in this function has been sanitized to prevent
+	// information disclosure. var_dump() calls have been removed as they
+	// could expose sensitive data to end users when debug mode is enabled.
 
 	function parseResponse($fp)
 	{
@@ -792,7 +795,9 @@ class XML_RPC_Message extends CI_Xmlrpc
 			echo "---DATA---\n" . htmlspecialchars($data) . "\n---END DATA---\n\n";
 
 			echo "---PARSED---\n" ;
-			var_dump($this->xh[$parser]['value']);
+			// Security fix: var_dump() removed to prevent information disclosure
+			// Previously exposed internal variable structure which could leak sensitive data
+			
 			echo "\n---END PARSED---</pre>";
 		}
 
